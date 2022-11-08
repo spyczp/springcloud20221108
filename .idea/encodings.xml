@@ -11,6 +11,12 @@
     <file url="file://$PROJECT_DIR$/03-feign/01-order-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-feign/user-service-02/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-feign/user-service-02/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-hystrix/crocodile-03/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-hystrix/crocodile-03/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-hystrix/customer-service-01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-hystrix/customer-service-01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-hystrix/rent-car-service-02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-hystrix/rent-car-service-02/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-a/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-a/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-b/src/main/java" charset="UTF-8" />

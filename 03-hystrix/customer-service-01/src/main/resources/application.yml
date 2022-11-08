@@ -1,0 +1,39 @@
+# 应用名称
+spring:
+  application:
+    name: customer-service
+# 应用服务 WEB 访问端口
+server:
+  port: 8081
+
+#eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.37.9.58:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+
+#开启Hystrix
+feign:
+  hystrix:
+    enabled: true
+
+hystrix: #hystrix 的全局控制
+  command:
+    default: #default 是全局控制，也可以换成单个方法控制，把 default 换成方法名即可
+      fallback:
+        isolation:
+          semaphore:
+            maxConcurrentRequests: 1000 #信号量隔离级别最大并发数
+      circuitBreaker:
+        enabled: true #开启断路器
+        requestVolumeThreshold: 3 #失败次数（阀值）
+        sleepWindowInMilliseconds: 20000 #窗口时间
+        errorThresholdPercentage: 60 #失败率
+      execution:
+        isolation:
+          Strategy: thread #隔离方式 thread 线程隔离集合和 SEMAPHORE
+
