@@ -1,0 +1,18 @@
+# 应用名称
+spring:
+  application:
+    name: provider
+# 应用服务 WEB 访问端口
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.37.9.58:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+
+

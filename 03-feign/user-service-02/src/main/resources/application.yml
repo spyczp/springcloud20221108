@@ -1,0 +1,26 @@
+# 应用名称
+spring:
+  application:
+    name: user-service
+# 应用服务 WEB 访问端口
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.37.9.58:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+
+ribbon:
+  ReadTimeout: 3000 #设置3秒 服务调用 返回超时时间
+  ConnectTimeout: 3000 #设置连接超时时间
+
+logging:
+  level:
+    com.atom.feign.UserOrderFeign: debug #打印这个接口下面的日志
+
+

@@ -1,0 +1,23 @@
+# 应用名称
+spring:
+  application:
+    name: eureka-client-b
+
+# 应用服务 WEB 访问端口
+server:
+  port: 8081
+
+#注册
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+    registry-fetch-interval-seconds: 10
+  instance:
+    hostname: localhost
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 10
+

@@ -1,0 +1,26 @@
+# 应用名称
+spring:
+  application:
+    name: consumer
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.37.9.58:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+
+#这里可以通过指定服务，来让这个服务使用什么规则
+provider: #服务名称
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+
+ribbon:
+  eager-load:
+    enabled: true # ribbon 需要通过eureka来发现服务。这里的配置为true，则在项目启动时就去eureka拉取服务列表。为false为懒加载

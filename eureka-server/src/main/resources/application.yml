@@ -1,0 +1,48 @@
+# 应用名称
+spring:
+  application:
+    name: eureka-server
+
+server:
+  port: 8761 #eureka的默认端口
+
+#eureka的配置一般分为三类：server client 示例
+# 单机版配置
+eureka:
+  server:
+    eviction-interval-timer-in-ms: 10000
+    renewal-percent-threshold: 0.85
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka}
+    register-with-eureka: ${REGISTER_WITH_EUREKA:true}
+    fetch-registry: true
+  instance:
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+    hostname: localhost
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+
+#集群
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://peer2:8762/eureka,http://peer3:8763/eureka
+#  instance:
+#    instance-id: ${eureka.instances.hostname}:${spring.application.name}:${server.port}
+#    hostname: peer1
+#    prefer-ip-address: true
+#    lease-renewal-interval-in-seconds: 5
+
+#集群终极方案
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://peer1:8761/eureka,http://peer2:8762/eureka,http://peer3:8763/eureka
+#  instance:
+#    instance-id: ${spring.application.name}:${server.port}
+##    hostname: peer1
+#    prefer-ip-address: true
+#    lease-renewal-interval-in-seconds: 5
+
+

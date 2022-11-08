@@ -1,0 +1,19 @@
+package com.atom.domain;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class Order {
+
+    private String name;
+    private Double price;
+    private Integer count;
+    private String address;
+
+}
