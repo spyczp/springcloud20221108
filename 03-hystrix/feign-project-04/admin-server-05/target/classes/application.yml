@@ -1,0 +1,23 @@
+# 应用名称
+spring:
+  application:
+    name: admin-server
+# 应用服务 WEB 访问端口
+server:
+  port: 10086
+
+#eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.37.9.58:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'  # 暴露所有的监控端点 # 如果一个服务需要被监控 那么就要讲自身的一些情况(一些信息接口)暴露出去

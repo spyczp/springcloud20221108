@@ -8,6 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-client-b" />
+        <module name="05-gateway" />
+        <module name="admin-server-05" />
+        <module name="project-domain" />
         <module name="eureka-client-a" />
         <module name="rest-template-03" />
         <module name="02-ribbon" />
@@ -16,15 +19,29 @@
         <module name="rent-car-service-02" />
         <module name="01-order-service" />
         <module name="03-feign" />
-        <module name="03-hystrix" />
+        <module name="order-center" />
         <module name="eureka-server" />
-        <module name="eureka-server-b" />
-        <module name="eureka-server-c" />
         <module name="customer-service-01" />
         <module name="provider-01-b" />
         <module name="provider-01-a" />
         <module name="crocodile-03" />
+        <module name="login-service-02" />
+        <module name="user-center" />
+        <module name="03-hystrix" />
+        <module name="eureka-server-b" />
+        <module name="eureka-server-c" />
+        <module name="common-api" />
+        <module name="gateway-server-01" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-api" options="-parameters" />
+      <module name="feign-project-04" options="-parameters" />
+      <module name="order-center" options="-parameters" />
+      <module name="project-domain" options="-parameters" />
+      <module name="user-center" options="-parameters" />
+    </option>
   </component>
 </project>

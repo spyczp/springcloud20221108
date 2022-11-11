@@ -1,0 +1,43 @@
+# 应用名称
+spring:
+  application:
+    name: user-service
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1 #配置采样率 默认的采样比例为: 0.1，即 10%，所设置的值介于 0 到 1 之间，1 则表示全部采集
+      rate: 10 #为了使用速率限制采样器,选择每秒间隔接受的 trace 量，最小数字为 0，最大值为 2,147,483,647（最大 int） 默认为 10
+# 应用服务 WEB 访问端口
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.37.9.58:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+
+#ribbon:
+#  ReadTimeout: 3000 #设置3秒 服务调用 返回超时时间
+#  ConnectTimeout: 3000 #设置连接超时时间
+#
+#logging:
+#  level:
+#    com.atom.feign.UserOrderFeign: debug #打印这个接口下面的日志
+
+#开启熔断器
+feign:
+  hystrix:
+    enabled: true
+
+#暴露自身检查端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
