@@ -10,10 +10,22 @@ spring:
       enabled: true
       routes:
         - id: login-service-route
-          uri: http://localhost:8081
+          #uri: http://localhost:8081
+          uri: lb://login-service
           predicates:
             - Path=/doLogin
-
+      discovery:
+        locator:
+          enabled: true #开启动态路由
+          lower-case-service-id: true #动态路由小驼峰规
+eureka:
+  client:
+    service-url:
+      defaultZone: http://121.37.9.58:8761/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
 
 
 

@@ -20,25 +20,33 @@
         <module name="01-order-service" />
         <module name="03-feign" />
         <module name="order-center" />
+        <module name="euraka-server-b" />
         <module name="eureka-server" />
         <module name="customer-service-01" />
         <module name="provider-01-b" />
         <module name="provider-01-a" />
+        <module name="rent-car-02" />
         <module name="crocodile-03" />
         <module name="login-service-02" />
+        <module name="untitled" />
         <module name="user-center" />
         <module name="03-hystrix" />
         <module name="eureka-server-b" />
         <module name="eureka-server-c" />
         <module name="common-api" />
+        <module name="order-service" />
         <module name="gateway-server-01" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="login-service-02 (1)" target="1.8" />
+      <module name="login-service-03" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common-api" options="-parameters" />
-      <module name="feign-project-04" options="-parameters" />
+      <module name="feign-project-04" options="" />
       <module name="order-center" options="-parameters" />
       <module name="project-domain" options="-parameters" />
       <module name="user-center" options="-parameters" />

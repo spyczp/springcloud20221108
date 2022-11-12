@@ -11,7 +11,6 @@
     <modules>
         <module>project-domain</module>
         <module>common-api</module>
-        <module>order-service</module>
         <module>user-center</module>
     </modules>
 

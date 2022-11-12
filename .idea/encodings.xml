@@ -20,6 +20,8 @@
     <file url="file://$PROJECT_DIR$/03-hystrix/feign-project-04/common-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-hystrix/feign-project-04/order-center/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-hystrix/feign-project-04/project-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-hystrix/feign-project-04/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-hystrix/feign-project-04/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-hystrix/feign-project-04/user-center/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-hystrix/rent-car-service-02/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-hystrix/rent-car-service-02/src/main/resources" charset="UTF-8" />
@@ -27,6 +29,8 @@
     <file url="file://$PROJECT_DIR$/05-gateway/gateway-server-01/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05-gateway/login-service-02/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05-gateway/login-service-02/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-gateway/login-service-03/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-gateway/login-service-03/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-a/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-a/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-b/src/main/java" charset="UTF-8" />
