@@ -18,6 +18,10 @@ spring:
         locator:
           enabled: true #开启动态路由
           lower-case-service-id: true #动态路由小驼峰
+  redis:
+    host: 121.37.9.58
+    port: 6379
+    password: redis.123
 eureka:
   client:
     service-url:
