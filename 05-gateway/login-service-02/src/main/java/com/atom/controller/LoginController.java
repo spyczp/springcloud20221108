@@ -16,6 +16,6 @@ public class LoginController {
 
         UUID token = UUID.randomUUID();
 
-        return token.toString() + " 服务1";
+        return token + " 服务1";
     }
 }

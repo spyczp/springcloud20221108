@@ -17,7 +17,7 @@ spring:
       discovery:
         locator:
           enabled: true #开启动态路由
-          lower-case-service-id: true #动态路由小驼峰规
+          lower-case-service-id: true #动态路由小驼峰
 eureka:
   client:
     service-url:
