@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-client-b" />
         <module name="05-gateway" />
+        <module name="nacos-config-test" />
         <module name="admin-server-05" />
         <module name="project-domain" />
         <module name="eureka-client-a" />
@@ -25,15 +26,21 @@
         <module name="customer-service-01" />
         <module name="provider-01-b" />
         <module name="provider-01-a" />
+        <module name="07-nacos" />
         <module name="rent-car-02" />
         <module name="crocodile-03" />
         <module name="login-service-02" />
+        <module name="nacos-client-b" />
+        <module name="nacos-client-a" />
         <module name="untitled" />
         <module name="user-center" />
         <module name="03-hystrix" />
+        <module name="teacher-service-03" />
         <module name="eureka-server-b" />
         <module name="eureka-server-c" />
         <module name="common-api" />
+        <module name="gateway-nacos" />
+        <module name="nacos-config-a" />
         <module name="order-service" />
         <module name="gateway-server-01" />
       </profile>

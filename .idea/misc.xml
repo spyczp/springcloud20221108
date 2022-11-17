@@ -28,6 +28,13 @@
         <option value="$PROJECT_DIR$/login-service-02/pom.xml" />
         <option value="$PROJECT_DIR$/05-gateway/login-service-02/pom.xml" />
         <option value="$PROJECT_DIR$/05-gateway/gateway-server-01/pom.xml" />
+        <option value="$PROJECT_DIR$/05-gateway/teacher-service/pom.xml" />
+        <option value="$PROJECT_DIR$/05-gateway/teacher-service-03/pom.xml" />
+        <option value="$PROJECT_DIR$/07-nacos/nacos-client-a/pom.xml" />
+        <option value="$PROJECT_DIR$/07-nacos/nacos-client-b/pom.xml" />
+        <option value="$PROJECT_DIR$/07-nacos/gateway-nacos/pom.xml" />
+        <option value="$PROJECT_DIR$/07-nacos/nacos-config-a/pom.xml" />
+        <option value="$PROJECT_DIR$/07-nacos/nacos-config-test/pom.xml" />
       </list>
     </option>
   </component>

@@ -27,6 +27,18 @@
     <file url="file://$PROJECT_DIR$/05-gateway/gateway-server-01/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05-gateway/login-service-02/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05-gateway/login-service-02/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-gateway/teacher-service-03/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-gateway/teacher-service-03/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-nacos/gateway-nacos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-nacos/gateway-nacos/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-nacos/nacos-client-a/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-nacos/nacos-client-a/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-nacos/nacos-client-b/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-nacos/nacos-client-b/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-nacos/nacos-config-a/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-nacos/nacos-config-a/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-nacos/nacos-config-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-nacos/nacos-config-test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-a/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-a/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-client-b/src/main/java" charset="UTF-8" />

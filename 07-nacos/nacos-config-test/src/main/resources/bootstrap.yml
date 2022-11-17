@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: nacos-config-test
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        namespace: e7eb7e97-c04a-4162-8409-58f51b151b6e
+        file-extension: yml
+        extension-configs:
+          - dataId: user-center-dev.yml
+            group: A_GROUP
+            refresh: true
+          - dataId: member-center-dev.yml
+            group: B_GROUP
+            refresh: false
+#  profiles:
+#    active: dev

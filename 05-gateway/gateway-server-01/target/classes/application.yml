@@ -14,10 +14,18 @@ spring:
           uri: lb://login-service
           predicates:
             - Path=/doLogin
+            - Method=GET,POST
+          filters:
+            - name: RequestRateLimiter #过滤器的名称
+              args:
+                key-resolver: '#{@apiKeyResolver}'
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 3
       discovery:
         locator:
           enabled: true #开启动态路由
           lower-case-service-id: true #动态路由小驼峰
+
   redis:
     host: 121.37.9.58
     port: 6379

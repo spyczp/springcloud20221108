@@ -1,0 +1,19 @@
+# 应用名称
+spring:
+  application:
+    name: nacos-client-a
+  cloud:
+    nacos: #nacos配置
+      server-addr: localhost:8848,localhost:8850,localhost:8852
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: ac629dc7-8a6c-43d7-9f0c-56f24a06d334
+        group: A-GROUP
+
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+
+
+
