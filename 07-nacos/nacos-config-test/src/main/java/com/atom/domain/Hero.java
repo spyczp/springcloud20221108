@@ -23,6 +23,6 @@ public class Hero {
     @Value("${hero.sex}")
     private String sex;
 
-    @Value("${member.hobby}")
+    @Value("${share.hobby}")
     private String hobby;
 }
